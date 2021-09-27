@@ -1,4 +1,12 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
       <div class="px-4 py-3 text-right sm:px-2">
         <a href="exp_create.php"><button class="bg-blue-500 Uppercase text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
           Create
@@ -19,3 +27,5 @@
           Delete
         </button></a>
           </div>
+          </body>
+</html>

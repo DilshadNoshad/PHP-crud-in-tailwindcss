@@ -5,6 +5,7 @@
 
 function create(){
     global $connection;
+    if(isset($_POST['submit'])){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $first_name = $_POST['first_name'];
@@ -33,6 +34,7 @@ function create(){
       <p>Create Successfully.</p>
     </div>';
     }
+  }
 }
 function read(){
   global $connection;
@@ -47,18 +49,10 @@ function read(){
 
 
 while($row = mysqli_fetch_assoc($result)){
-  ?>
-
-  <pre>
-    <?php
     print_r($row);
-    ?>
-  </pre>
-    <?php
-
+  }
 }
 
-}
 function fetch_id(){
   global $connection;
 
@@ -80,6 +74,7 @@ function fetch_id(){
 function update(){
   global $connection;
 
+  if(isset($_POST['submit'])){
   $username = $_POST['username'];
   $email = $_POST['email'];
   $first_name = $_POST['first_name'];
@@ -115,11 +110,13 @@ function update(){
       echo '<div class="flex items-center bg-yellow-500 text-white text-sm font-bold px-4 py-3" role="alert">
       <p>Update Successfully.</p>
     </div>';
+    }
   }
 }
 
   function delete(){
     global $connection;
+    if(isset($_POST['submit'])){
     $id = $_POST['id'];
 
     $query = "DELETE FROM info_data ";
@@ -135,6 +132,7 @@ function update(){
     </div>';
     }
   }
+}
 
 
 ?>

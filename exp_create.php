@@ -1,12 +1,7 @@
-<?php include "dbcon.php";
-?>
-<?php include "functions.php";
-?>
-<?php
-if(isset($_POST['submit'])){
-  create();
-}
-?>
+<?php include "dbcon.php"; ?>
+<?php include "functions.php"; ?>
+<?php create(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

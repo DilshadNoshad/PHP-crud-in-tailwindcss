@@ -1,12 +1,7 @@
-<?php include "dbcon.php";
-?>
-<?php include "functions.php";
-?>
-<?php
-if(isset($_POST['submit'])){
-    delete();
-}
-?>
+<?php include "dbcon.php"; ?>
+<?php include "functions.php"; ?>
+<?php delete(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,7 +1,6 @@
-<?php include "dbcon.php";
-?>
-<?php include "functions.php";
-?>
+<?php include "dbcon.php"; ?>
+<?php include "functions.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +22,9 @@
           </div>
 <div class="container">
         <div class="p-5 mb-4 bg-light rounded-3">
-        <?php
-    read();
-?>
-
+            <pre>
+            <?php read(); ?>
+            </pre>
         </div>
     </div>
 </body>

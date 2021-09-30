@@ -12,7 +12,15 @@ function create(){
     $address = $_POST['address'];
     $city = $_POST['city'];
     $country = $_POST['country'];
-  
+    
+    $username = mysqli_real_escape_string($connection, $username);
+    $email = mysqli_real_escape_string($connection, $email);
+    $first_name = mysqli_real_escape_string($connection, $first_name);
+    $last_name = mysqli_real_escape_string($connection, $last_name);
+    $address = mysqli_real_escape_string($connection, $address);
+    $city = mysqli_real_escape_string($connection, $city);
+    $country = mysqli_real_escape_string($connection, $country);
+
     $query = "INSERT INTO info_data (username, email, first_name, last_name, address, city, country)";
     $query .= "VALUES ('$username', '$email', '$first_name', '$last_name', '$address', '$city', '$country')";
   
@@ -81,6 +89,14 @@ function update(){
   $country = $_POST['country'];
   $id = $_POST['id'];
 
+  $username = mysqli_real_escape_string($connection, $username);
+  $email = mysqli_real_escape_string($connection, $email);
+  $first_name = mysqli_real_escape_string($connection, $first_name);
+  $last_name = mysqli_real_escape_string($connection, $last_name);
+  $address = mysqli_real_escape_string($connection, $address);
+  $city = mysqli_real_escape_string($connection, $city);
+  $country = mysqli_real_escape_string($connection, $country);
+  
   $query = "UPDATE info_data SET ";
   $query .= "username = '$username', ";
   $query .= "email = '$email', ";
